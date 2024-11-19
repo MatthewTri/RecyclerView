@@ -35,7 +35,18 @@
         android:layout_height="wrap_content"
         android:text="Deskripsi Wayang"
         android:id="@+id/deskripsiWayang"
+        android:ellipsize="end"
+        android:maxLines="3"
         app:layout_constraintBottom_toBottomOf="@+id/gambarWayang"
         app:layout_constraintStart_toEndOf="@+id/gambarWayang" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hapus Data"
+        android:id="@+id/btnHapus"
+        app:layout_constraintStart_toStartOf="@id/deskripsiWayang"
+        app:layout_constraintTop_toBottomOf="@id/deskripsiWayang"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
